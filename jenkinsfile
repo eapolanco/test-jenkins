@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Echo') {
             steps {
-                echo "Info ${BUILD_ID} on ${JENKINS_URL}"
+                echo "Info: ${BUILD_ID}, ${JENKINS_URL}, ${BUILD_NUMBER}, ${BUILD_TAG}, ${BUILD_URL}, ${EXECUTOR_NUMBER}, ${JAVA_HOME}, ${JOB_NAME}, ${NODE_NAME}, ${WORKSPACE}"
             }
         }
         
