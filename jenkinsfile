@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Echo') {
             steps {
-                echo 'Info ${BUILD_ID} on ${JENKINS_URL}'
+                echo "Info ${BUILD_ID} on ${JENKINS_URL}"
             }
         }
         
